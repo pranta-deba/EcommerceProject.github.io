@@ -1,0 +1,26 @@
+
+ALTER TABLE subcategories
+ADD FOREIGN KEY (category_id) REFERENCES categories(id);
+
+ALTER TABLE products
+ADD FOREIGN KEY (category_id) REFERENCES categories(id);
+
+ALTER TABLE products
+ADD FOREIGN KEY (subcategory_id) REFERENCES subcategories(id);
+
+
+
+ALTER TABLE oders
+ADD FOREIGN KEY (user_id) REFERENCES users(id);
+
+ALTER TABLE orderdetails
+ADD FOREIGN KEY (order_id) REFERENCES orders(id);
+
+ALTER TABLE orderdetails
+ADD FOREIGN KEY (product_id) REFERENCES products(id);
+
+
+share page :
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63da3c781eec0c00124e5705&product=sticky-share-buttons&source=platform" async="async"></script>
+
+<div class="sharethis-sticky-share-buttons"></div>

@@ -1,0 +1,68 @@
+#newNav li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 20px;
+    float: left;
+    position: relative;
+}
+
+#newNav a {
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    border-left: #CCC 1px solid;
+    color: #e7e5e5;
+    /* background-color: #736C56; */
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#newNav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 150px;
+    /* Fix for IE 7 */
+    background-color: #FFF;
+}
+
+#newNav li:hover>ul {
+    display: block;
+}
+
+#newNav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: #CCC 1px solid;
+}
+
+#newNav ul ul {
+    left: 150px;
+    top: 5px;
+}
+
+#newNav li:hover>a,
+#newNav a:focus {
+    background-color: #f7444e;
+    color: #fff;
+}
+
+#newNav ul a {
+    background-color:  #dc4f56b8;
+    border: .5px solid  #fff;
+}
+
+#newNav ul li:hover>a {
+    background-color:  #a3797b;
+}
+
+#newNav li:first-child a,
+#newNav ul ul li:first-child,
+#newNav ul a {
+    border: none;
+}
